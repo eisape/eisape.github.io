@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- inspired by www.jesse.mu -->
+<html style="overflow: hidden; height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Tiwalayo Eisape</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="eisape">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <link rel="shortcut icon" href="eisape_files/icon.ico" type="image/x-icon">
+  <link rel="icon" href="eisape_files/icon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./eisape_files/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./eisape_files/jquery.fullPage.css">
+  <script src="./eisape_files/jquery.min.js"></script>
+  <script src="./eisape_files/scrolloverflow.min.js"></script>
+  <script type="text/javascript" src="./eisape_files/jquery.fullpage.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        scrollOverflow: true,
+        scrollOverflowEndPrevent: { delay: 500, reversal: false },
+        scrollOverflowOptions: {
+          disablePointer: true
+        },
+      });
+
+      $('#btn-down').click(function() {
+          $.fn.fullpage.moveSectionDown();
+      });
+
+      $('#email').click(function(el) {
+        if ($(this).text() === "Email") {
+          $(this).css('cursor', 'text');
+          $(this).text("lastname / mit / edu");
+        }
+      });
+    });
+
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        scrollOverflow: true,
+        scrollOverflowEndPrevent: { delay: 500, reversal: false },
+        scrollOverflowOptions: {
+          disablePointer: true
+        },
+      });
+
+      $('#btn-down').click(function() {
+          $.fn.fullpage.moveSectionDown();
+      });
+
+      $('#teaching').click(function(el) {
+        if ($(this).text() === "Teaching") {
+          $(this).css('cursor', 'text');
+          $(this).remove();
+          $('#datamining').show();
+          // $('#list').append("<div>  data </div>");
+        }
+
+      });
+    });
+
+  $(document).ready(function() {
+    if ($(this).text() === "Data Mining (CS334601)") {
+      $(this).attr("href", "http://cs.bc.edu/~alvarez/DataMining/");
+    }});
+  </script>
+</head>
+<body data-gr-c-s-loaded="true" style="overflow: scroll; height: 100%;" class="fp-viewing-0">
+<div style="height: 100%; position: relative; touch-action: none; transform: translate3d(0px, 0px, 0px);">
+<a style="color:white;" href="russianSite_beta/People.html"> . </a>
+  <div class="section fp-section fp-table " style="position: relative; top: 25%;"><div class="fp-tableCell" style="height: 50%; ">
+    <div class="section-inner">
+<img alt="Tiwa" src="./eisape_files/qt.jpg" id="face">
+      <p id="desc">
+        I am a first year PhD student at MIT Brain and Cognitive Sciences where I investigate the way
+        the brain represents the world via cognitive modeling. Specifically, I use language as a 
+        window into the mind and language models as candidate models of human language processing. 
+        Prior to MIT I completed a B.S in Computer Science at Boston College under the supervision of 
+        Joshua Hartshorne and Stefano Anzellotti.
+        </p>
+
+
+      <ul id="list">
+        <li><a href="eisape_files/cv.pdf">CV</a></li>
+        <li><a id="email" class="fake-link" >Email</a></li>
+        <!-- <li><a margin-left="20px" href="http://l3atbc.org/People.html">L3@BC</a></li> -->
+        <li><a href="eisape_files/Resume.pdf">Resume</a></li>
+        <li><a  href="research.html">Research</a></li>
+        <li><a id="teaching" class="fake-link" >Teaching</a></li>
+        <li><a hidden id="datamining" href="http://cs.bc.edu/~alvarez/DataMining/">Data Mining</a></li>
+        <!-- <li><a  href="personal.html">Personal</a></li> -->
+      </ul>
+      <div id="footer">
+      <p>
+          <a href="http://www.linkedin.com/in/eisape"><img src="./eisape_files/linkedin.ico" width="25" height="25" style="vertical-align:middle"></a>
+          <a href="https://eisape.youcanbook.me/"><img src="./eisape_files/youcanbookme.ico" width="25" height="25" style="vertical-align:middle"></a>
+          <a href=""><img src="eisape_files/osf.ico" width="25" height="25" style="vertical-align:middle"></a>
+          <a href="https://github.com/eisape"><img src="eisape_files/github.ico" width="25" height="25" style="vertical-align:middle"></a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div>
+<!-- <p id="f2">
+    <a href="http://www.linkedin.com/in/eisape"><img src="./eisape_files/linkedin.ico" width="25" height="25" style="vertical-align:middle"></a>
+    <a href="https://eisape.youcanbook.me/"><img src="./eisape_files/youcanbookme.ico" width="25" height="25" style="vertical-align:middle"></a>
+    <a href=""><img src="eisape_files/osf.ico" width="25" height="25" style="vertical-align:middle"></a>
+    <a href="https://github.com/eisape"><img src="eisape_files/github.ico" width="25" height="25" style="vertical-align:middle"></a>
+  </p> -->
+</div>
+  <!-- <div class="sect" style="height: 100%; position: relative; touch-action: none; transform: translate3d(0px, 0px, 0px);"> hey!</div> -->
+</div>
+
+</body></html>
