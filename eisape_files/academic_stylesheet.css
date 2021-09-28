@@ -129,3 +129,13 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+img#face {
+    float: left;
+    border-radius: 2.5%;
+    height: 300px;
+    width: 300px;
+    /* height: 250px;
+    width: 297px; */
+    margin-bottom: 10px;
+}
