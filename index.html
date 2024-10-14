@@ -15,12 +15,22 @@
     <style>
       body {
         font-family: Arial, sans-serif;
-        /* Removed max-width to allow full-width alignment */
-        margin: 0; /* Changed from 0 auto to 0 to align left */
-        padding: 20px;
+        margin: 0;
+        padding: 0;
         line-height: 1.6;
         color: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
       }
+
+      .container {
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
       .header {
         display: flex;
         flex-direction: row;
@@ -28,99 +38,118 @@
         justify-content: space-between;
         margin-bottom: 40px;
       }
+
       .header-text {
         flex: 1;
         padding-right: 20px;
       }
+
       .header-text .name {
         font-size: 2em;
-        font-weight: bold;
-        text-align: left; /* Changed from center to left */
+        /* Removed font-weight to unbold the name */
+        text-align: left;
         margin-bottom: 10px;
       }
+
       .header-text p {
-        text-align: justify; /* Kept as justify for better readability */
+        text-align: justify;
       }
+
       .social-links {
-        text-align: center; /* Changed from left to center */
+        text-align: center;
         margin-top: 20px;
       }
+
       .social-links a {
         margin: 0 10px;
         color: #333;
         text-decoration: none;
-        font-size: 16px;
+        /* Removed font-size to match bio text size */
       }
+
       .profile-photo {
         flex: 0 0 150px;
       }
+
       .profile-photo img {
         width: 150px;
         height: 150px;
         object-fit: cover;
-        border-radius: 5px; /* Changed from 50% to 5px for slight rounding */
+        border-radius: 5px;
         border: 2px solid #ccc;
       }
+
       .section {
         margin-bottom: 40px;
       }
+
       .section h2 {
         border-bottom: 2px solid #ccc;
         padding-bottom: 10px;
         margin-bottom: 20px;
       }
+
       .highlight {
         background-color: #ff0;
       }
+
       /* Responsive Design */
       @media (max-width: 600px) {
         .header {
           flex-direction: column;
           align-items: center;
         }
+
         .header-text {
           padding-right: 0;
           text-align: center;
         }
+
         .social-links {
-          text-align: center; /* Adjusted for smaller screens */
+          text-align: center;
         }
+
         .profile-photo {
           margin-top: 20px;
+        }
+
+        .container {
+          width: 100%; /* Full width on mobile */
         }
       }
     </style>
   </head>
 
   <body>
-    <div class="header">
-      <div class="header-text">
-        <p class="name">Tiwalayo Eisape</p>
-        <p>
-          I am a PhD student in the <a href="https://bcs.mit.edu/" target="_blank">Department of Brain and Cognitive Sciences</a> and the <a href="https://www.csail.mit.edu/" target="_blank">Computer
-            Science and Artificial Intelligence Lab (CSAIL)</a> at MIT. I'm advised by <a href="http://cpl.mit.edu/people.html" target="_blank">Roger Levy</a> and <a
-            href="https://people.csail.mit.edu/yoonkim/" target="_blank">Yoon Kim</a>.
-        </p>
-        <p>
-          I use machine learning and NLP to model human language processing. My work is supported by an <a href="https://www.nsfgrfp.org/" target="_blank">NSF GRFP</a>. I am also the student
-          representative to the board of the <a href="https://cognitivesciencesociety.org/" target="_blank">Cognitive Science Society</a> and have spent time at <a href="https://research.google/"
-            target="_blank">Google Research</a> and the <a href="https://ai.meta.com/research/" target="_blank">Fundamental AI Research team (FAIR)</a> at Meta.
-        </p>
-        <div class="social-links">
-          <a href="https://twitter.com/tiwa_eisape" target="_blank">Twitter</a> |
-          <a href="https://scholar.google.com/citations?hl=en&user=1FI8NfEAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a> |
-          <a href="assets/cv.pdf" target="_blank">CV</a> |
-          <a href="mailto:eisape@mit.edu">Email</a>
+    <div class="container">
+      <div class="header">
+        <div class="header-text">
+          <p class="name">Tiwalayo Eisape</p>
+          <p>
+            I am a PhD student in the <a href="https://bcs.mit.edu/" target="_blank">Department of Brain and Cognitive Sciences</a> and the <a href="https://www.csail.mit.edu/" target="_blank">Computer
+              Science and Artificial Intelligence Lab (CSAIL)</a> at MIT. I'm advised by <a href="http://cpl.mit.edu/people.html" target="_blank">Roger Levy</a> and <a
+              href="https://people.csail.mit.edu/yoonkim/" target="_blank">Yoon Kim</a>.
+          </p>
+          <p>
+            I use machine learning and NLP to model human language processing. My work is supported by an <a href="https://www.nsfgrfp.org/" target="_blank">NSF GRFP</a>. I am also the student
+            representative to the board of the <a href="https://cognitivesciencesociety.org/" target="_blank">Cognitive Science Society</a> and have spent time at <a href="https://research.google/"
+              target="_blank">Google Research</a> and the <a href="https://ai.meta.com/research/" target="_blank">Fundamental AI Research team (FAIR)</a> at Meta.
+          </p>
+          <hr> <!-- Added horizontal bar between bio and links -->
+          <div class="social-links">
+            <a href="https://twitter.com/tiwa_eisape" target="_blank">Twitter</a> |
+            <a href="https://scholar.google.com/citations?hl=en&user=1FI8NfEAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a> |
+            <a href="assets/cv.pdf" target="_blank">CV</a> |
+            <a href="mailto:eisape@mit.edu">Email</a>
+          </div>
+        </div>
+        <div class="profile-photo">
+          <a href="assets/qt.jpg" target="_blank">
+            <img src="assets/qt.jpg" alt="Profile Photo">
+          </a>
         </div>
       </div>
-      <div class="profile-photo">
-        <a href="assets/qt.jpg" target="_blank">
-          <img src="assets/qt.jpg" alt="Profile Photo">
-        </a>
-      </div>
     </div>
-
     <!-- Add other sections as needed -->
-
   </body>
 </html>
