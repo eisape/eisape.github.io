@@ -2,21 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Your Name</title>
+    <title>Tiwalayo Eisape</title>
 
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Tiwalayo Eisape">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/icons/icon.ico" type="image/x-icon">
     <!-- External Stylesheet -->
-    <link rel="stylesheet" href="stylesheet.css">
-    
-    <!-- Internal Styles (Optional) -->
+    <link rel="stylesheet" href="style/stylesheet.css">
+
+    <!-- Internal Styles (Updated) -->
     <style>
       body {
         font-family: Arial, sans-serif;
-        max-width: 800px;
-        margin: 0 auto;
+        /* Removed max-width to allow full-width alignment */
+        margin: 0; /* Changed from 0 auto to 0 to align left */
         padding: 20px;
         line-height: 1.6;
         color: #333;
@@ -35,14 +35,14 @@
       .header-text .name {
         font-size: 2em;
         font-weight: bold;
-        text-align: center;
+        text-align: center; /* Keeping the name centered */
         margin-bottom: 10px;
       }
       .header-text p {
-        text-align: center;
+        text-align: justify; /* Changed from center to justify */
       }
       .social-links {
-        text-align: center;
+        text-align: left; /* Changed from center to left */
         margin-top: 20px;
       }
       .social-links a {
@@ -82,6 +82,9 @@
           padding-right: 0;
           text-align: center;
         }
+        .social-links {
+          text-align: center; /* Adjusted for smaller screens */
+        }
         .profile-photo {
           margin-top: 20px;
         }
@@ -90,41 +93,34 @@
   </head>
 
   <body>
-    <!-- Header Section -->
     <div class="header">
       <div class="header-text">
-        <p class="name">Your Name</p>
+        <p class="name">Tiwalayo Eisape</p>
         <p>
-          I am a PhD student in the <a href="https://bcs.mit.edu/" target="_blank">Department of Brain and Cognitive Sciences</a> and the <a href="https://www.csail.mit.edu/" target="_blank">Computer Science and Artificial Intelligence Lab (CSAIL)</a> at MIT. I'm advised by <a href="http://cpl.mit.edu/people.html" target="_blank">Roger Levy</a> and <a href="https://people.csail.mit.edu/yoonkim/" target="_blank">Yoon Kim</a>.
+          I am a PhD student in the <a href="https://bcs.mit.edu/" target="_blank">Department of Brain and Cognitive Sciences</a> and the <a href="https://www.csail.mit.edu/" target="_blank">Computer
+            Science and Artificial Intelligence Lab (CSAIL)</a> at MIT. I'm advised by <a href="http://cpl.mit.edu/people.html" target="_blank">Roger Levy</a> and <a
+            href="https://people.csail.mit.edu/yoonkim/" target="_blank">Yoon Kim</a>.
         </p>
         <p>
-          I use machine learning and NLP to model human language processing. My work is supported by an <a href="https://www.nsfgrfp.org/" target="_blank">NSF GRFP</a>. I am also the student representative to the board of the <a href="https://cognitivesciencesociety.org/" target="_blank">Cognitive Science Society</a> and have spent time at <a href="https://research.google/" target="_blank">Google Research</a> and the <a href="https://ai.meta.com/research/" target="_blank">Fundamental AI Research team (FAIR)</a> at Meta.
+          I use machine learning and NLP to model human language processing. My work is supported by an <a href="https://www.nsfgrfp.org/" target="_blank">NSF GRFP</a>. I am also the student
+          representative to the board of the <a href="https://cognitivesciencesociety.org/" target="_blank">Cognitive Science Society</a> and have spent time at <a href="https://research.google/"
+            target="_blank">Google Research</a> and the <a href="https://ai.meta.com/research/" target="_blank">Fundamental AI Research team (FAIR)</a> at Meta.
         </p>
         <div class="social-links">
           <a href="https://twitter.com/tiwa_eisape" target="_blank">Twitter</a> |
           <a href="https://scholar.google.com/citations?hl=en&user=1FI8NfEAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a> |
-          <a href="https://github.com/eisape/eisape.github.io/blob/main/eisape_files/cv.pdf" target="_blank">CV</a> |
+          <a href="assets/cv.pdf" target="_blank">CV</a> |
           <a href="mailto:eisape@mit.edu">Email</a>
         </div>
       </div>
       <div class="profile-photo">
-        <a href="images/your_profile_photo.jpg" target="_blank">
-          <img src="images/your_profile_photo.jpg" alt="Profile Photo">
+        <a href="assets/qt.jpg" target="_blank">
+          <img src="assets/qt.jpg" alt="Profile Photo">
         </a>
       </div>
     </div>
 
-    <!-- Research Section -->
-    <div class="section" id="research">
-      <h2>Research</h2>
-      <p>
-        I use machine learning and natural language processing (NLP) to model human language processing. My research focuses on [brief description of your research interests, e.g., "understanding the cognitive mechanisms underlying language acquisition and comprehension"]. Most of my research involves [specific methodologies or tools, e.g., "developing computational models to simulate neural processes"].
-      </p>
-      <p>
-        Some of my papers are <span class="highlight">highlighted</span> below.
-      </p>
-      <!-- Add highlighted papers or links here -->
-    </div>
+    <!-- Add other sections as needed -->
 
   </body>
 </html>
