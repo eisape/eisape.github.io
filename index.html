@@ -49,15 +49,30 @@
         text-align: justify;
       }
 
+      /* Links in Bio */
+      .header-text a {
+        color: blue;
+        text-decoration: none;
+      }
+
+      .header-text a:hover {
+        text-decoration: underline;
+      }
+
       .social-links {
         text-align: center;
         margin-top: 20px;
       }
 
+      /* Links at the Bottom in Blue */
       .social-links a {
         margin: 0 10px;
-        color: #333;
+        color: blue;
         text-decoration: none;
+      }
+
+      .social-links a:hover {
+        text-decoration: underline;
       }
 
       .profile-photo {
@@ -68,7 +83,7 @@
         width: 150px;
         height: 150px;
         object-fit: cover;
-        border-radius: 5px;
+        border-radius: 2px; /* More subtle rounding */
         /* Removed border, added subtle shadow */
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
       }
@@ -136,7 +151,7 @@
             <a href="https://scholar.google.com/citations?hl=en&user=1FI8NfEAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a> |
             <a href="assets/cv.pdf" target="_blank">CV</a> |
             <a href="mailto:eisape@mit.edu">Email</a> |
-            <a href="github.com/eisape" target="_blank">GitHub</a>
+            <a href="https://github.com/eisape" target="_blank">GitHub</a>
           </div>
         </div>
         <div class="profile-photo">
@@ -146,6 +161,5 @@
         </div>
       </div>
     </div>
-    <!-- Add other sections as needed -->
   </body>
 </html>
