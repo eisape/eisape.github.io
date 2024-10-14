@@ -30,7 +30,7 @@
       .header {
         display: flex;
         flex-direction: row;
-        align-items: stretch;
+        align-items: center;
         margin-bottom: 40px;
       }
 
@@ -41,9 +41,8 @@
 
       .header-text .name {
         font-size: 2em;
-        text-align: center; /* Centered the name above the bio */
+        text-align: center;
         margin-bottom: 10px;
-        margin-top: 0;
       }
 
       .header-text p {
@@ -62,17 +61,15 @@
       }
 
       .profile-photo {
-        flex: 0 0 auto;
-        display: flex;
-        align-items: flex-start;
+        flex: 0 0 150px;
       }
 
       .profile-photo img {
-        width: auto;
-        height: calc(100% - 20px); /* Adjusted to match the height of name and bio */
-        aspect-ratio: 1 / 1; /* Ensures the image is always square */
+        width: 150px;
+        height: 150px;
         object-fit: cover;
-        border-radius: 1px; /* Subtle rounding */
+        border-radius: 5px;
+        /* Removed border, added subtle shadow */
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
       }
 
@@ -108,11 +105,6 @@
 
         .profile-photo {
           margin-top: 20px;
-        }
-
-        .profile-photo img {
-          width: 150px;
-          height: 150px;
         }
 
         .container {
