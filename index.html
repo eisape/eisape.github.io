@@ -30,7 +30,7 @@
       .header {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: stretch; /* Adjusted to stretch items */
         margin-bottom: 40px;
       }
 
@@ -41,8 +41,9 @@
 
       .header-text .name {
         font-size: 2em;
-        text-align: center;
-        margin-bottom: 10px;
+        text-align: left; /* Left-aligned the name */
+        margin-bottom: 5px; /* Moved name closer to bio */
+        margin-top: 10px; /* Added margin-top to move name downward */
       }
 
       .header-text p {
@@ -51,7 +52,7 @@
 
       .social-links {
         text-align: center;
-        margin-top: 20px;
+        margin-top: 10px; /* Moved links upward */
       }
 
       .social-links a {
@@ -61,15 +62,15 @@
       }
 
       .profile-photo {
-        flex: 0 0 150px;
+        flex: 0 0 auto;
       }
 
       .profile-photo img {
         width: 150px;
-        height: 150px;
+        height: 100%; /* Image spans the height of bio and name */
         object-fit: cover;
-        border-radius: 5px;
-        /* Removed border, added subtle shadow */
+        border-radius: 1px; /* More subtle rounding */
+        /* Added subtle shadow */
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
       }
 
@@ -90,21 +91,26 @@
       /* Responsive Design */
       @media (max-width: 600px) {
         .header {
-          flex-direction: column;
-          align-items: center;
+          flex-direction: row; /* Keep items in a row */
+          align-items: stretch;
         }
 
         .header-text {
-          padding-right: 0;
-          text-align: center;
+          padding-right: 10px;
+          text-align: left;
         }
 
         .social-links {
-          text-align: center;
+          text-align: left;
         }
 
         .profile-photo {
-          margin-top: 20px;
+          flex: 0 0 100px; /* Adjusted for smaller screens */
+        }
+
+        .profile-photo img {
+          width: 100px;
+          height: 100%;
         }
 
         .container {
