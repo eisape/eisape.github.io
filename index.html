@@ -120,10 +120,16 @@
         }
 
         .profile-photo {
-          order: -1;
-          width: 10vw;
-          height: 10vw;
-          margin-top: 2vh;
+          order: -1; /* Moves the image above the text */
+          margin-bottom: 2vh; /* Optional: Add space below the image */
+          width: 100%; /* Ensures the container takes full width */
+          text-align: center; /* Centers the image */
+        }
+
+        .profile-photo img {
+          width: 80%; /* Makes the image larger on mobile */
+          max-width: 300px; /* Optional: Set a maximum width */
+          height: auto; /* Maintains aspect ratio */
         }
 
         .container {
