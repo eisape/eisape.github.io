@@ -86,7 +86,7 @@
         object-fit: cover;
         border-radius: 0.2vw; /* More subtle rounding */
         /* Removed border, added subtle shadow */
-        box-shadow: 0 0.05vw 0.05vw rgba(0, 0, 0, 0.4);
+        box-shadow: 0 0.1vw 0.1vw rgba(0, 0, 0, 0.4);
       }
 
       .section {
@@ -127,10 +127,14 @@
         }
 
         .profile-photo img {
-          width: 80%; /* Makes the image larger on mobile */
+          width: 70%; /* Makes the image larger on mobile */
           max-width: 300px; /* Optional: Set a maximum width */
           height: auto; /* Maintains aspect ratio */
-        }
+          object-fit: cover;  
+          border-radius: 0.2vw; /* More subtle rounding */
+          /* Removed border, added subtle shadow */
+          box-shadow: 0 0.1vw 0.1vw rgba(0, 0, 0, 0.4);
+          }
 
         .container {
           width: 90%; /* Full width on mobile */
