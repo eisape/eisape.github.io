@@ -1,3 +1,4 @@
+**/.vscode
 **/.DS_Store
 **/.RData
 **/*.bbl
@@ -7,3 +8,6 @@
 **/*.aux
 **/*.blg
 **/*.fls
+assets/cv/*
+!assets/cv/cv.pdf
+!assets/cv/cv.tex
